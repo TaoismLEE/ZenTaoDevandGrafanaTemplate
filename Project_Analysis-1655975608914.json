@@ -1,0 +1,3064 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "",
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "gnetId": 11557,
+  "graphTooltip": 0,
+  "id": 4,
+  "iteration": 1655975586885,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "mysql",
+        "uid": "R_rI8VC7z"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [
+            {
+              "options": {
+                "match": "null",
+                "result": {
+                  "text": "N/A"
+                }
+              },
+              "type": "special"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "致命占比"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "decimals",
+                "value": 2
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-red",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "严重占比"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "decimals",
+                "value": 2
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-orange",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "一般占比"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "decimals",
+                "value": 2
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-yellow",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "提示占比"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "decimals",
+                "value": 2
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-green",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "致命"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-red",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "严重"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-orange",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "一般"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-yellow",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "提示"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-green",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "累计Bug总数"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-purple",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 59,
+      "links": [],
+      "maxDataPoints": 100,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "mean"
+          ]
+        },
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "8.5.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '累计Bug总数'  FROM zt_bug where product=${product_id} and deleted='0';",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "activatedCount"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_bug",
+          "timeColumn": "activatedDate",
+          "timeColumnType": "datetime",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '致命' FROM zt_bug where product=${product_id} and deleted='0' and severity='1';",
+          "refId": "F",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '严重' FROM zt_bug where product=${product_id} and deleted='0'and severity='2';",
+          "refId": "G",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '一般' FROM zt_bug where product=${product_id} and deleted='0'and  severity='3';",
+          "refId": "H",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '提示' FROM zt_bug where product=${product_id} and deleted='0'and severity='4';",
+          "refId": "I",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*)/ (SELECT COUNT(*) FROM zt_bug where product=${product_id} and deleted='0') as '致命占比' FROM zt_bug where product=${product_id} and deleted='0' and severity='1';",
+          "refId": "J",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*)/ (SELECT COUNT(*) FROM zt_bug where product=${product_id} and deleted='0') as '严重占比' FROM zt_bug where product=${product_id} and deleted='0' and severity='2';",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*)/ (SELECT COUNT(*) FROM zt_bug where product=${product_id} and deleted='0') as '一般占比' FROM zt_bug where product=${product_id} and deleted='0' and severity='3';",
+          "refId": "L",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*)/ (SELECT COUNT(*) FROM zt_bug where product=${product_id} and deleted='0') as '提示占比' FROM zt_bug where product=${product_id} and deleted='0' and severity='4';",
+          "refId": "M",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "mysql",
+        "uid": "R_rI8VC7z"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [
+            {
+              "options": {
+                "match": "null",
+                "result": {
+                  "text": ""
+                }
+              },
+              "type": "special"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              },
+              {
+                "color": "#EAB839",
+                "value": 90
+              },
+              {
+                "color": "#6ED0E0",
+                "value": 100
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "致命"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-red",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "严重"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-orange",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "一般"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-yellow",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "提示"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-green",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "今日新增"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-purple",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 55,
+      "links": [],
+      "maxDataPoints": 100,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "lastNotNull"
+          ]
+        },
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "8.5.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '今日新增' FROM zt_bug where product=${product_id} and deleted='0'and date(openedDate)=curdate();",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "activatedCount"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_bug",
+          "timeColumn": "activatedDate",
+          "timeColumnType": "datetime",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '致命' FROM zt_bug where product=${product_id} and deleted='0'and date(openedDate)=curdate() and severity='1';",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '严重' FROM zt_bug where product=${product_id} and deleted='0'and date(openedDate)=curdate() and severity='2';",
+          "refId": "C",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '一般' FROM zt_bug where product=${product_id} and deleted='0'and date(openedDate)=curdate() and severity='3';",
+          "refId": "D",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '提示' FROM zt_bug where product=${product_id} and deleted='0'and date(openedDate)=curdate() and severity='4';",
+          "refId": "E",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "transformations": [
+        {
+          "id": "filterFieldsByName",
+          "options": {
+            "include": {
+              "names": [
+                "今日新增",
+                "致命",
+                "严重",
+                "一般",
+                "提示"
+              ]
+            }
+          }
+        }
+      ],
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "mysql",
+        "uid": "R_rI8VC7z"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [
+            {
+              "options": {
+                "match": "null",
+                "result": {
+                  "text": "N/A"
+                }
+              },
+              "type": "special"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "致命"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-red",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "严重"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-orange",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "一般"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-yellow",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "提示"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-green",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "今日关闭"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-purple",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 12,
+        "y": 3
+      },
+      "id": 53,
+      "links": [],
+      "maxDataPoints": 100,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "lastNotNull"
+          ]
+        },
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "8.5.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '今日关闭' FROM zt_bug where product=${product_id} and deleted='0'and date(closedDate)=curdate();",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "activatedCount"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_bug",
+          "timeColumn": "activatedDate",
+          "timeColumnType": "datetime",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '致命' FROM zt_bug where product=${product_id} and deleted='0'and date(closedDate)=curdate() and severity='1';",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '严重' FROM zt_bug where product=${product_id} and deleted='0'and date(closedDate)=curdate() and severity='2';",
+          "refId": "C",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '一般' FROM zt_bug where product=${product_id} and deleted='0'and date(closedDate)=curdate() and severity='3';",
+          "refId": "D",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '提示' FROM zt_bug where product=${product_id} and deleted='0'and date(closedDate)=curdate() and severity='4' and module not REGEXP '${except_id}';",
+          "refId": "E",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "mysql",
+        "uid": "R_rI8VC7z"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [
+            {
+              "options": {
+                "match": "null",
+                "result": {
+                  "text": "N/A"
+                }
+              },
+              "type": "special"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "致命占比"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "decimals",
+                "value": 2
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-red",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "严重占比"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "decimals",
+                "value": 2
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-orange",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "一般占比"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "decimals",
+                "value": 2
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-yellow",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "提示占比"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "decimals",
+                "value": 2
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-green",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "致命"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-red",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "严重"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-orange",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "一般"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-yellow",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "提示"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-green",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "累计未关闭Bug总数"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-purple",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 0,
+        "y": 5
+      },
+      "id": 51,
+      "libraryPanel": {
+        "description": "",
+        "meta": {
+          "connectedDashboards": 1,
+          "created": "2022-06-23T11:18:24+08:00",
+          "createdBy": {
+            "avatarUrl": "/avatar/46d229b033af06a191ff2267bca9ae56",
+            "id": 1,
+            "name": "admin"
+          },
+          "folderName": "General",
+          "folderUid": "",
+          "updated": "2022-06-23T11:18:24+08:00",
+          "updatedBy": {
+            "avatarUrl": "/avatar/46d229b033af06a191ff2267bca9ae56",
+            "id": 1,
+            "name": "admin"
+          }
+        },
+        "name": "Sample",
+        "type": "stat",
+        "uid": "dpGKkOqnk",
+        "version": 1
+      },
+      "links": [],
+      "maxDataPoints": 100,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "mean"
+          ]
+        },
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "8.5.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '累计未关闭Bug总数' FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\";",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "activatedCount"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_bug",
+          "timeColumn": "activatedDate",
+          "timeColumnType": "datetime",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '致命' FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\" and severity='1';",
+          "refId": "F",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '严重' FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\" and severity='2';",
+          "refId": "G",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '一般' FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\" and severity='3';",
+          "refId": "H",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '提示' FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\" and severity='4';",
+          "refId": "I",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*)/ (SELECT COUNT(*) FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\") as '致命占比' FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\" and severity='1';",
+          "refId": "J",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*)/ (SELECT COUNT(*) FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\") as '严重占比' FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\" and severity='2';",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*)/ (SELECT COUNT(*) FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\") as '一般占比' FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\" and severity='3';",
+          "refId": "L",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*)/ (SELECT COUNT(*) FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\") as '提示占比' FROM zt_bug where product=${product_id} and deleted='0' and status!=\"closed\" and severity='4';",
+          "refId": "M",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "mysql",
+        "uid": "R_rI8VC7z"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [
+            {
+              "options": {
+                "match": "null",
+                "result": {
+                  "text": "N/A"
+                }
+              },
+              "type": "special"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "已解决待回归"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-blue",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "激活"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "dark-purple",
+                      "value": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 12,
+        "y": 6
+      },
+      "id": 57,
+      "links": [],
+      "maxDataPoints": 100,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "mean"
+          ]
+        },
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "8.5.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '激活' FROM zt_bug where product=${product_id} and deleted='0' and status='active';",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "activatedCount"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_bug",
+          "timeColumn": "activatedDate",
+          "timeColumnType": "datetime",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) as '已解决待回归'  FROM zt_bug where product=${product_id} and deleted='0' and assignedTo!=\"closed\" and status='resolved';",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "mysql",
+        "uid": "R_rI8VC7z"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "center",
+            "displayMode": "auto",
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "合计"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "gradient-gauge"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "percentage",
+                  "steps": [
+                    {
+                      "color": "dark-red",
+                      "value": null
+                    },
+                    {
+                      "color": "orange",
+                      "value": 0.1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "致命"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "严重"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "一般"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "提示"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "模块"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 200
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 12,
+        "x": 0,
+        "y": 10
+      },
+      "id": 43,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true,
+        "sortBy": []
+      },
+      "pluginVersion": "8.5.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "select 模块, 合计, 致命, 严重, 一般, 提示 from (SELECT m.name as '模块',COUNT(a.new) as '合计',\r\n\tCOUNT(case when a.severity='1' then 1 end) as \"致命\",\r\n\tCOUNT(case when a.severity='2' then 1 end) as \"严重\",\r\n\tCOUNT(case when a.severity='3' then 1 end) as \"一般\",\r\n\tCOUNT(case when a.severity='4' then 1 end) as \"提示\"\r\nfrom(\r\n\tselect case b.module\r\n\twhen '0' then '/' else b.module end as module ,b.severity,m.parent, case when substring(substring_index(m.path,',',2),2) is NULL then 0 else substring(substring_index(m.path,',',2),2) end as new\r\n\tfrom zt_bug b\r\n\tleft JOIN zt_module m\r\n\ton b.module = m.id\r\n\twhere b.product=${product_id} and b.deleted='0') a\r\nINNER JOIN (select id, name from zt_module union select 0, '/（未关联模块）') m\r\non a.new = m.id\r\nGROUP BY a.new) temp \r\norder BY 合计 desc;",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "title": "所有Bug模块分布",
+      "transformations": [],
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "mysql",
+        "uid": "R_rI8VC7z"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "center",
+            "displayMode": "auto",
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "合计"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "gradient-gauge"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "percentage",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "blue",
+                      "value": 0.2
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "致命"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "严重"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "一般"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "提示"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "模块"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 120
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 12,
+        "x": 12,
+        "y": 10
+      },
+      "id": 45,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "8.5.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT m.name as '模块',COUNT(a.new) as '合计',\r\n\tCOUNT(case when a.severity='1' then 1 end) as \"致命\",\r\n\tCOUNT(case when a.severity='2' then 1 end) as \"严重\",\r\n\tCOUNT(case when a.severity='3' then 1 end) as \"一般\",\r\n\tCOUNT(case when a.severity='4' then 1 end) as \"提示\"\r\nfrom(\r\n\tselect case b.module\r\n\twhen '0' then '/' else b.module end as module ,b.severity,m.parent, case when substring(substring_index(m.path,',',2),2) is NULL then 0 else substring(substring_index(m.path,',',2),2) end as new\r\n\tfrom zt_bug b\r\n\tleft JOIN zt_module m\r\n\ton b.module = m.id\r\n\twhere b.product='${product_id}' and b.deleted='0' and b.status!='closed') a\r\nINNER JOIN (select id, name from zt_module union select 0, '/（未关联模块）') m\r\non a.new = m.id\r\nGROUP BY a.new\r\norder by COUNT(a.new) desc;",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "title": "未关闭Bug模块分布",
+      "type": "table"
+    },
+    {
+      "aliasColors": {},
+      "bars": true,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": {
+        "type": "mysql",
+        "uid": "R_rI8VC7z"
+      },
+      "description": "统计基于当前日期往前1年内的版本情况。",
+      "fieldConfig": {
+        "defaults": {
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 0,
+      "fillGradient": 1,
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 21
+      },
+      "hiddenSeries": false,
+      "id": 40,
+      "legend": {
+        "alignAsTable": false,
+        "avg": false,
+        "current": false,
+        "hideEmpty": false,
+        "hideZero": false,
+        "max": false,
+        "min": false,
+        "rightSide": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": false,
+      "linewidth": 1,
+      "nullPointMode": "connected",
+      "options": {
+        "alertThreshold": false
+      },
+      "percentage": false,
+      "pluginVersion": "8.5.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "time_series",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT \r\n\tnow() as time_sec,\r\n  a.new,\r\n  count(*) as 'Ver'\r\nfrom(\r\n\tselect b.module,b.severity,m.name as new, b.assignedTo, m.date\r\n\tfrom zt_bug b\r\n\tINNER JOIN zt_build m\r\n\ton b.openedBuild = m.id\r\n\twhere b.product=${product_id} and b.deleted='0' and m.date>DATE_SUB(CURDATE(), INTERVAL 1 YEAR)) a\r\nGROUP BY a.new\r\nORDER BY a.date desc;",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeRegions": [],
+      "title": "版本Bug趋势",
+      "tooltip": {
+        "shared": false,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "mode": "series",
+        "show": true,
+        "values": [
+          "current"
+        ]
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:2563",
+          "format": "short",
+          "logBase": 1,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:2564",
+          "format": "short",
+          "logBase": 1,
+          "show": false
+        }
+      ],
+      "yaxis": {
+        "align": false
+      }
+    },
+    {
+      "datasource": {
+        "type": "mysql",
+        "uid": "R_rI8VC7z"
+      },
+      "description": "统计基于当前日期往前1年内的版本情况。",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "center",
+            "displayMode": "auto",
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "致命"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 99
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "严重"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "一般"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "提示"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "未关闭致命"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 95
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "未关闭严重"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 95
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "未关闭一般"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 95
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "未关闭提示"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 95
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "激活的"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "已解决"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "模块"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 160
+              },
+              {
+                "id": "displayName",
+                "value": "版本"
+              },
+              {
+                "id": "custom.align",
+                "value": "left"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "合计"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "gradient-gauge"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "percentage",
+                  "steps": [
+                    {
+                      "color": "dark-red",
+                      "value": null
+                    },
+                    {
+                      "color": "semi-dark-orange",
+                      "value": 0
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "未关闭合计"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "gradient-gauge"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "percentage",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "blue",
+                      "value": 0
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 29
+      },
+      "id": 47,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "8.5.5",
+      "targets": [
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT a.new as '模块',\r\n\tCOUNT(case when a.severity='1' then 1 end) as \"致命\",\r\n\tCOUNT(case when a.severity='2' then 1 end) as \"严重\",\r\n\tCOUNT(case when a.severity='3' then 1 end) as \"一般\",\r\n\tCOUNT(case when a.severity='4' then 1 end) as \"提示\",\r\n\tcount(*) as \"合计\",\r\n  COUNT(case when a.severity='1' and a.assignedTo!=\"closed\" then 1 end) as \"未关闭致命\",\r\n\tCOUNT(case when a.severity='2' and a.assignedTo!=\"closed\" then 1 end) as \"未关闭严重\",\r\n\tCOUNT(case when a.severity='3' and a.assignedTo!=\"closed\" then 1 end) as \"未关闭一般\",\r\n\tCOUNT(case when a.severity='4' and a.assignedTo!=\"closed\" then 1 end) as \"未关闭提示\",\r\n\tcount(case when a.status='active' then 1 end) as \"激活的\",\r\n\tcount(case when a.assignedTo!=\"closed\" and a.status='resolved' then 1 end) as \"已解决\",\r\n\tcount(case when a.assignedTo!=\"closed\" then 1 end) as \"未关闭合计\"\r\nfrom(\r\n\tselect b.module,b.severity,m.name as new, b.assignedTo, b.status, m.date\r\n\tfrom zt_bug b\r\n\tINNER JOIN zt_build m\r\n\ton b.openedBuild = m.id\r\n\twhere b.product='${product_id}' and b.deleted='0' and m.date>DATE_SUB(CURDATE(), INTERVAL 1 YEAR)) a\r\nGROUP BY a.new\r\norder BY a.date desc;",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "title": "版本Bug分布",
+      "type": "table"
+    },
+    {
+      "columns": [],
+      "datasource": {
+        "type": "mysql",
+        "uid": "R_rI8VC7z"
+      },
+      "description": "仅统计了验证程度为“致命”和“严重”的未关闭Bug。",
+      "fontSize": "100%",
+      "gridPos": {
+        "h": 16,
+        "w": 24,
+        "x": 0,
+        "y": 41
+      },
+      "id": 36,
+      "pageSize": 15,
+      "showHeader": true,
+      "sort": {
+        "col": 5,
+        "desc": false
+      },
+      "styles": [
+        {
+          "$$hashKey": "object:374",
+          "alias": "Time",
+          "align": "auto",
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "pattern": "Time",
+          "type": "date"
+        },
+        {
+          "$$hashKey": "object:375",
+          "alias": "",
+          "align": "auto",
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 0,
+          "link": true,
+          "linkTargetBlank": true,
+          "linkTooltip": "点击查看详情",
+          "linkUrl": "http://cngdctax-tst03:9090/zentao/bug-view-${__cell_0}.html",
+          "mappingType": 1,
+          "pattern": "Bug编号",
+          "thresholds": [],
+          "type": "string",
+          "unit": "short"
+        },
+        {
+          "$$hashKey": "object:376",
+          "alias": "",
+          "align": "auto",
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "link": false,
+          "linkTargetBlank": true,
+          "linkTooltip": "点击查看详情",
+          "linkUrl": "http://chandao.inetposa.com/zentao/bug-view-${__cell_0}.html",
+          "mappingType": 1,
+          "pattern": "缺陷标题",
+          "thresholds": [],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "$$hashKey": "object:377",
+          "alias": "",
+          "align": "auto",
+          "colorMode": "value",
+          "colors": [
+            "#C4162A",
+            "#FF780A",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 0,
+          "mappingType": 1,
+          "pattern": "严重程度",
+          "thresholds": [
+            "1.1",
+            "2.1"
+          ],
+          "type": "string",
+          "unit": "short",
+          "valueMaps": [
+            {
+              "$$hashKey": "object:454",
+              "text": "致命",
+              "value": "1"
+            },
+            {
+              "$$hashKey": "object:455",
+              "text": "严重",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "$$hashKey": "object:378",
+          "alias": "",
+          "align": "auto",
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "decimals": 0,
+          "pattern": "/.*/",
+          "thresholds": [],
+          "type": "number",
+          "unit": "short"
+        }
+      ],
+      "targets": [
+        {
+          "datasource": {
+            "type": "mysql",
+            "uid": "R_rI8VC7z"
+          },
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT new.id as 'Bug编号', m.name as '所属模块', new.title as '缺陷标题', new.openedBy as '创建者', new.assignedTo as '指派给' , new.severity as '严重程度'\r\nFROM (\r\nSELECT a.id,a.module,a.title,a.openedBy,a.assignedTo,a.severity,case when substring(substring_index(b.path,',',2),2) is NULL then 0 else substring(substring_index(b.path,',',2),2) end as new_module\r\nFROM zt_bug a\r\nLEFT JOIN zt_module b\r\non a.module = b.id\r\nwhere a.product = '${product_id}' and a.deleted='0' and a.status!='closed' and a.severity REGEXP '1|2') new\r\nINNER JOIN (select id, name from zt_module union select 0, '/') m\r\non new.new_module = m.id ORDER BY 严重程度",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "calledTime"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "zt_entry",
+          "timeColumn": "createdDate",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "title": "未关闭Bug( 致命&严重)",
+      "transform": "table",
+      "type": "table-old"
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 36,
+  "style": "dark",
+  "tags": [
+    "zentao"
+  ],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": false,
+          "text": "DMS",
+          "value": "DMS"
+        },
+        "datasource": {
+          "type": "mysql",
+          "uid": "R_rI8VC7z"
+        },
+        "definition": "SELECT NAME FROM zt_product WHERE `status`= 'normal';",
+        "hide": 0,
+        "includeAll": false,
+        "label": "",
+        "multi": false,
+        "name": "project",
+        "options": [],
+        "query": "SELECT NAME FROM zt_product WHERE `status`= 'normal';",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "10",
+          "value": "10"
+        },
+        "datasource": {
+          "type": "mysql",
+          "uid": "R_rI8VC7z"
+        },
+        "definition": "SELECT id FROM zt_product WHERE `name`='${project}';",
+        "hide": 2,
+        "includeAll": false,
+        "label": "product_id",
+        "multi": false,
+        "name": "product_id",
+        "options": [],
+        "query": "SELECT id FROM zt_product WHERE `name`='${project}';",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ]
+  },
+  "timezone": "",
+  "title": "Project_Analysis",
+  "uid": "DfX-mmEWk",
+  "version": 63,
+  "weekStart": ""
+}
